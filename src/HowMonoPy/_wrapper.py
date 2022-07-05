@@ -1,9 +1,16 @@
 from ctypes import *
+from sys import platform
 import os
 
-_module_dir = os.path.dirname(__file__)
-_clib_path = _module_dir + "/clib/libhowmonochromatic.so"
+_os_clib_map = {
+    "win32": "\\clib\\howmonochromatic.dll",
+    "linux": "/clib/libhowmonochromatic.so"
+}
+
+_clib_path = os.path.dirname(__file__) + _os_clib_map.get(platform, "")
+
 _clib = CDLL(_clib_path)
+
 _clib.howMono.restype = c_double
 
 
