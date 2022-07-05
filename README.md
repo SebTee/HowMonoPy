@@ -2,7 +2,9 @@
 
 A Python wrapper for the c library from [how-monochromatic](https://github.com/SebTee/how-monochromatic).
 
-Currently, only supports Linux.
+#### If you need to cite this software, please cite the [how-monochromatic repository](https://github.com/SebTee/how-monochromatic) that this code wraps.
+
+Currently supports Linux and Windows.
 
 ## Example
 
