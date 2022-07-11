@@ -28,8 +28,7 @@ g = "1 green 2 green 1 0\n" \
     "4 blue 6 blue 1 0 \n" \
     "5 green 6 green 1 0 "
 
-with HowMonoPy.Analyser() as a:
-    print(a.how_mono(g))
+print(HowMonoPy.how_mono(g))
 
 ```
 

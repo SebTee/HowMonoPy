@@ -5,7 +5,7 @@ with open(os.path.dirname(__file__) + "/README.md", "r") as f:
     readme = f.read()
 
 setup(name="HowMonoPy",
-      version="0.1",
+      version="0.2",
       description="A Python wrapper for the c library from how-monochromatic.",
       long_description=readme,
       long_description_content_type='text/markdown',
@@ -24,6 +24,6 @@ setup(name="HowMonoPy",
           "Programming Language :: Haskell",
           "Topic :: Scientific/Engineering :: Mathematics",
           "License :: OSI Approved :: MIT License",
-          "Development Status :: 3 - Alpha"
+          "Development Status :: 4 - Beta"
       ],
       zip_safe=True)
