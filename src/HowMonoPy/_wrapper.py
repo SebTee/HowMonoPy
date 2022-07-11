@@ -22,4 +22,13 @@ _clib.hs_init(0, 0)
 
 
 def how_mono(g):
+    """Analyses a bi-colored graph's closeness to being monochromatic
+
+    Args:
+        g (str): String encoded bi-colored graph.
+
+    Returns:
+        float: How close g is to being monochromatic.
+
+    """
     return _clib.howMono(g.encode())
