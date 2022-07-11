@@ -30,5 +30,11 @@ def how_mono(g):
     Returns:
         float: How close g is to being monochromatic.
 
+    Raises:
+        RuntimeError: Could not parse the input bi-colored graph.
+
     """
-    return _clib.howMono(g.encode())
+    hm = _clib.howMono(g.encode())
+    if hm == -1:
+        raise RuntimeError("Could not parse the input bi-colored graph.")
+    return hm
